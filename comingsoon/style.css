@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#city-background {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: rgb(18, 18, 158); */
+    position: relative;
+    background: url(./assets/images/Baku_city_at_night.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* #city-background .baku-image {
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    object-fit: cover;
+} */
+
+#city-background .background-cover {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(17, 17, 154, 0.0761554621848739) 0%, rgba(5, 5, 131, 1) 63%);
+    opacity: .8;
+
+}
+
+#city-background .coming-soon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#city-background .coming-soon .coming-soon-header {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.47);
+    width: 100%;
+    margin-bottom: 8%;
+    z-index: 111;
+}
+
+#city-background .coming-soon .coming-soon-header .header {
+    font-size: clamp(0.8rem, 0.8rem + 1.2842vw, 1.9rem);
+}
+
+#city-background .coming-soon .coming-soon-header .coming {
+    font-weight: 900;
+}
+
+#city-background .coming-soon .coming-soon-header .soon {
+    font-weight: 200;
+}
+
+#city-background .coming-soon .coming-soon-header .about {
+    font-size: clamp(0.6rem, 0.5897rem + 1.2627vw, 1.3rem);
+}
+
+#city-background .coming-soon .coming-soon-header .about .about-text {
+    font-weight: 200;
+}
+
+#city-background .coming-soon .logo {
+    width: clamp(6.25rem, 6.0668rem + 22.5479vw, 18.75rem);
+    position: absolute;
+    bottom: 10%;
+    z-index: 111;
+}
+
+/* @media only screen and (max-width: 494px) {
+    #city-background .coming-soon .coming-soon-header .header {
+        font-size: 1.5rem;
+    }
+
+
+    #city-background .coming-soon .coming-soon-header .about {
+        font-size: 1.1rem;
+    }
+} */
